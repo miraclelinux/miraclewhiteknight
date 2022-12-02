@@ -1,0 +1,9 @@
+[Unit]
+Description=Whitelist driven mandatory access control application
+Requires=@requires@
+
+[Service]
+ExecStart=@bindir@/whiteknight
+
+[Install]
+WantedBy=sysinit.target

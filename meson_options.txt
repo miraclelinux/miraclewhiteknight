@@ -1,0 +1,6 @@
+option ('syslog', type: 'feature', value: 'disabled', description: 'enable syslog support')
+option ('systemd', type: 'feature', value: 'disabled', description: 'enable systemd support')
+option ('tee', type: 'feature', value: 'disabled', description: 'enable tee support')
+option ('ta-dev-kit', type: 'string', description: 'path to ta development kit')
+option ('ta-arch', type: 'combo', choices: ['arm32', 'arm64'], description: 'TA architecture')
+
