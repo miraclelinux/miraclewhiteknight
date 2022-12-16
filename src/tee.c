@@ -169,14 +169,6 @@ int tee_ml_add (TEEC_Session *sess, const char *path) {
 	return 0;
 }
 
-// int tee_ml_remove (TEEC_Session *sess, const char *path) {
-// 	return TEEC_SUCCESS;
-// }
-
-// int tee_ml_flush (TEEC_Session *sess) {
-// 	return TEEC_SUCCESS;
-// }
-
 /*
  * Get mount point list from tee
 */
@@ -383,10 +375,6 @@ int tee_key_gen (TEEC_Session *sess) {
 		return -1;
 	}
 
-	// int tmp = tee_key_get_pub (sess);
-	// if (tmp != 0) {
-	// 	log_err ("%s: %s", __FUNCTION__, strerror (errno));
-	// }
 	return 0;
 }
 
@@ -427,12 +415,6 @@ int tee_key_get_pub (TEEC_Session *sess) {
 
 	return 0;
 }
-
-
-	// op.params[0].tmpref.buffer = data;
-	// op.params[0].tmpref.size = data_size;
-	// log_debug ("%s", (char *)data);
-
 
 char *tee_strerror (TEEC_Result res) {
 	switch (res) {
